@@ -303,22 +303,27 @@ body{
   line-height: 100%;
 }
 .lien {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 50px;
-  width: 243px;
-  background-color: #4070f4;
-  border: none;
-  border-radius: 5px;
-  color: #333;
-  font-size: 16px;
-  cursor: pointer;
-  position: absolute;
-  top: 30%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  text-align: center;
+  margin: 55px;
 }
+.lien a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+@media screen and (max-width: 600px) {
+  .lien a {
+    padding: 8px 16px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .lien a {
+    padding: 6px 12px;
+  }
 .Container .text{
     position:relative;
     color: #4070f4;
